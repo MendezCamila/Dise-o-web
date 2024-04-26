@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de Elisa Modas, una boutique de moda y accesorios en Gobernador Virasoro.">
+    <title>Elisa Modas</title>
+    <link rel="shortcut icon" href="moda.jpg">
+    <style>
+        /* Estilos CSS para resaltar algunos elementos */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #000000;
+        }
+        header {
+            background-color: #bc53a3;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+      background-color: #f971d9;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+        main {
+            padding: 20px;
+            text-align: justify;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            background-color: #ebafde;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4b2e6;
+            color: #fff;
+            border-radius: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #f971d9;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #e654bb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elisa Modas</h1>
+        <p>Brindamos una experiencia de compra excepcional, combinando estilo, atención personalizada y pasión por la moda.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Descubre la boutique de moda y accesorios más encantadora de Gobernador Virasoro. En Elisa Modas, nos dedicamos a ofrecer una cuidada selección de prendas y complementos para hombres y mujeres, siempre en tendencia y de la más alta calidad.</p>
+        </section>
+
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa apasionada por la moda desde 2020. A lo largo de nuestra trayectoria, hemos construido una sólida reputación por nuestra dedicación y trabajo.</p>
+            <p>En Elisa Modas, nos motiva ofrecer a nuestros clientes una experiencia única de moda y estilo. Creemos en la importancia de la autenticidad, la calidad y la atención al detalle. Cada día, nos esforzamos por inspirar a nuestros clientes y ayudarlos a expresar su personalidad a través de la moda.</p>
+            <p><strong>Lo que nos diferencia:</strong> Nos destacamos por nuestra cuidada selección de prendas y accesorios, siempre en línea con las últimas tendencias y de la más alta calidad. Nos distingue nuestro enfoque en la atención personalizada y la pasión por la moda que transmitimos en cada interacción con nuestros clientes.</p>
+            <img src="sobre nosotros.jpg" alt="Nosotros" style="width: 80%; max-width: 400px; display: block; margin: 0;">
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Venta de Ropa y Accesorios de Moda</li>
+                <li>Asesoramiento de Estilo Personalizado</li>
+                <li>Atención al Cliente Excepcional</li>
+                <li>Eventos y Promociones Especiales</li>
+                <li>Servicio de Compra en Línea (próximamente)</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto con nosotros a través del siguiente formulario:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Elisa Modas - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
