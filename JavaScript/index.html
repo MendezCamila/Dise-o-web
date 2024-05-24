@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicios JavaScript</title>
+<!-- Enlazar el archivo CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Ejercicio 1: Contador de clicks -->
+<section>
+    <div>
+        <h2>Contador de clicks</h2>
+        <p>Has hecho <span id="contador">0</span> clicks.</p>
+        <div class="input-container"></div>
+            <button id="boton" class="btn pulse-effect">Haz clic aquí</button>
+        </div>
+    </div>
+</section>
+
+<!-- Ejercicio 2: Cambio de Estilos Dinámico -->
+<section>
+    <h2>Cambio de Estilos Dinámico</h2>
+    <ul id="lista">
+        <li>Haz clic aquí para cambiar el estilo</li>
+        <li>Haz clic aquí para cambiar el estilo</li>
+        <li>Haz clic aquí para cambiar el estilo</li>
+    </ul>
+</section>
+<!-- Ejercicio 3: Validación de Formulario Simple -->
+<section>
+    <h2>Formulario Simple</h2>
+    <form id="formulario">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<!-- Sección del Ejercicio 4: Galería de Imágenes con Botones de Navegación -->
+<section>
+    <h2>Galería de Imágenes con Botones de Navegación</h2>
+    <div class="galeria">
+        <img src="imagenes/Imagen1.jpg" alt="Imagen 1">
+        <img src="imagenes/Imagen2.jpg" alt="Imagen 2">
+        <img src="imagenes/Imagen3.jpg" alt="Imagen 3">
+        <div class="input-container">
+            <button id="anterior" class="btn pulse-effect">Anterior</button>
+            <button id="siguiente" class="btn pulse-effect">Siguiente</button>
+        </div>
+    </div>
+</section>
+<!-- Sección del Ejercicio 5: Lista de Tareas con Agregar y Eliminar -->
+<section>
+    <h2>Lista de Tareas con Agregar y Eliminar</h2>
+    <div id="listaTareas">
+        <input type="text" id="nuevaTarea" placeholder="Añadir nueva tarea">
+        <div class="input-container"></div>
+            <button id="agregarTarea" class="btn pulse-effect">Agregar</button>
+        </div>
+        <ul id="listaTareasExist">
+            <!-- Aquí se agregarán dinámicamente las tareas -->
+        </ul>
+    </div>
+</section>
+<!-- Sección del Ejercicio 6: Reloj -->
+<section>
+    <h2>Reloj Digital</h2>
+    <div class="reloj-container">
+        <div id="reloj"></div>
+    </div>
+</section>
+<!-- Sección del Ejercicio 7: Juego de Memoria -->
+<section>
+    <h2>Juego de Memoria</h2>
+    <div class="juego">
+        <!-- Aquí se generará dinámicamente la cuadrícula de tarjetas -->
+    </div>
+</section>
+
+<!-- Sección del Ejercicio 8: Calculadora Simple -->
+<section class="calculadora">
+    <h2>Calculadora Simple</h2>
+    <div class="pantalla">
+        <input type="text" id="pantalla" readonly>
+    </div>
+    <div class="numeros">
+        <button onclick="agregar('7')">7</button>
+        <button onclick="agregar('8')">8</button>
+        <button onclick="agregar('9')">9</button><br>
+        <button onclick="agregar('4')">4</button>
+        <button onclick="agregar('5')">5</button>
+        <button onclick="agregar('6')">6</button><br>
+        <button onclick="agregar('1')">1</button>
+        <button onclick="agregar('2')">2</button>
+        <button onclick="agregar('3')">3</button><br>
+        <button onclick="agregar('0')">0</button>
+        <button onclick="agregar('.')">.</button>
+    </div>
+    <div class="operadores">
+        <button onclick="agregar('+')">+</button>
+        <button onclick="agregar('-')">-</button><br>
+        <button onclick="agregar('*')">*</button>
+        <button onclick="agregar('/')">/</button>
+    </div>
+    <div class="resultado">
+        <button class="boton-igual" onclick="calcular()">=</button>
+        <button onclick="limpiar()">C</button>
+    </div>
+</section>
+
+
+<!-- Enlazar el archivo JavaScript -->
+<script src="scripts.js"></script>
+
+</body>
+</html>
+

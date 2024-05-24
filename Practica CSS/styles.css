@@ -1,0 +1,241 @@
+p {
+    line-height: 1.6;
+}
+h2 {
+    color: #8ee3a4;
+    border-bottom: 2px solid  #8ee3a4;
+    padding-bottom: 10px;
+}
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilo para la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 2em;
+}
+
+/* Estilo para cada elemento de la galería */
+.gallery-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para las imágenes */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para las cajas */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #474b47;
+    font-size: 1em;
+}
+
+/* Caja pequeña con ancho y alto fijos */
+.small-box {
+    width: 140px;
+    height: 115px;
+    border: 1px solid #b7e3af;
+}
+
+.custom-list {
+    list-style: none; /* Quita las viñetas por defecto */
+    padding: 0;
+}
+
+.custom-list li {
+    background: #fff;
+    margin: 3px 0;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.custom-list li:hover {
+    background: #f0f0f0;
+}
+
+.custom-list li::before {
+    content: "•"; /* Añade un bullet personalizado */
+    color: #6db7e7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.pulse-effect {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff; /* Color base del botón */
+    transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+}
+
+.pulse-effect:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.pulse-effect:active {
+    transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Estilo para el div de pantalla completa */
+.full-screen-div {
+    width: 100%; /* Ancho completo de la pantalla */
+    padding: 20px; /* Espacio interno para el contenido */
+    background-color: lightgray; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    text-align: center; /* Centrar el contenido */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho y alto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el menú de navegación */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #4CAF50;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacto ul li {
+    margin: 10px 0;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+.icon-input {
+    padding: 10px 15px 10px 45px; 
+    border: 2px solid #2196F3; 
+    border-radius: 25px; 
+    width: 300px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7; 
+    outline: none; 
+}
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 350px; /* Ajusta este valor según sea necesario */
+    color: #777;
+    font-size: 20px;
+}
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}

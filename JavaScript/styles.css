@@ -1,0 +1,233 @@
+/* Estilos para el botón */
+.pulse-effect {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff; /* Color base del botón */
+    transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+}
+
+.pulse-effect:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.pulse-effect:active {
+    transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+}
+
+/* Estilos para la lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+/* Estilos para el formulario */
+form {
+    margin-top: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    position: relative;
+    text-align: center; /* Centra horizontalmente las imágenes y los botones */
+}
+
+.galeria img {
+    display: none; /* Oculta todas las imágenes por defecto */
+    max-width: 30%; /* Ajusta el tamaño máximo de las imágenes al contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    border-radius: 5px; /* Añade esquinas redondeadas */
+}
+
+.galeria div {
+    position: absolute; /* Posiciona los botones de navegación sobre las imágenes */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente los botones */
+}
+
+/* Estilos para la lista de tareas */
+#listaTareas {
+    margin-bottom: 20px;
+}
+
+#nuevaTarea {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#agregarTarea {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#agregarTarea:hover {
+    background-color: #45a049;
+}
+
+#listaTareasExist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaTareasExist li {
+    margin-bottom: 5px;
+}
+
+#listaTareasExist li button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#listaTareasExist li button:hover {
+    background-color: #d32f2f;
+}
+.reloj-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #333; /* Color del borde del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#reloj {
+    font-size: 36px;
+    font-family: Arial, sans-serif; /* Cambiar la fuente si lo deseas */
+    color: #333; /* Color del texto */
+}
+.juego {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    width: calc(25% - 10px);
+    height: 100px;
+    margin: 5px;
+    background-color: #bbb; /* Color de fondo de las tarjetas */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tarjeta.volteada {
+    background-color: #fff; /* Color de fondo de las tarjetas volteadas */
+}
+
+.tarjeta.volteada img {
+    display: block;
+    margin: auto;
+}
+.tarjeta img {
+    width: 100%; /* Ajusta el tamaño de las imágenes para llenar el contenedor de la tarjeta */
+    height: 100%;
+    border-radius: 5px; /* Añade esquinas redondeadas a las imágenes */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin distorsionarla */
+}
+
+
+.calculadora {
+    max-width: 350px; /* Ajuste el ancho máximo según sea necesario */
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.pantalla input {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.numeros, .operadores, .resultado {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.numeros button, .operadores button, .resultado button {
+    width: 40px; /* Ajuste el ancho según sea necesario */
+    height: 40px; /* Ajuste el alto según sea necesario */
+    margin: 5px;
+    font-size: 16px; /* Ajuste el tamaño de la fuente según sea necesario */
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.numeros button:hover, .operadores button:hover, .resultado button:hover {
+    background-color: #45a049;
+}
